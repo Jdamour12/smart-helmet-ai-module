@@ -1,0 +1,46 @@
+{
+  "fall_classifier": {
+    "train_samples": 480,
+    "test_samples": 120,
+    "accuracy_percent": 100.0,
+    "classification_report": {
+      "walking": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 114.0
+      },
+      "aftermath": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      }
+    }
+  },
+  "anomaly_detector": {
+    "accuracy_percent": 79.8,
+    "true_positives": 134,
+    "false_positives": 37,
+    "false_negatives": 54,
+    "true_negatives": 225,
+    "total_samples": 450
+  },
+  "models_saved": [
+    "models/anomaly_detector.joblib",
+    "models/fall_classifier.joblib"
+  ]
+}
