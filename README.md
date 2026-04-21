@@ -3,6 +3,7 @@
 AI/ML module for the Smart Safety Helmet final year project.
 
 This repository contains the model logic and training pipeline used to:
+
 - detect abnormal sensor behavior,
 - classify fall-related motion patterns,
 - estimate near-future hazard risk from sensor trends.
@@ -17,16 +18,20 @@ This repository contains the model logic and training pipeline used to:
 ## Models Included
 
 ### 1) Anomaly Detection
+
 Uses `IsolationForest` to learn normal sensor patterns and flag unusual behavior.
 
 ### 2) Fall Classification
+
 Uses `RandomForestClassifier` to classify motion states:
+
 - normal
 - walking
 - fall
 - aftermath
 
 ### 3) Hazard Prediction
+
 Uses trend-based analysis and regression to estimate near-term risk escalation.
 
 ## Requirements
@@ -48,6 +53,7 @@ python train_models.py
 ```
 
 Training outputs:
+
 - `models/anomaly_detector.joblib`
 - `models/fall_classifier.joblib`
 - `output/ai_evaluation.json`
